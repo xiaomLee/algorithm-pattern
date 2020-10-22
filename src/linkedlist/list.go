@@ -29,20 +29,20 @@ func NewIntList(nums []int) *ListNode {
 func (head *ListNode) Print() {
 	curr := head
 	for curr != nil {
-		fmt.Printf("%v, ", curr.val)
+		fmt.Printf("%v->", curr.val)
 		curr = curr.next
 	}
-	println()
+	println("NULL")
 }
 
 func (head *ListNode) String() string {
 	s := ""
 	curr := head
 	for curr != nil {
-		s += fmt.Sprintf("%v, ", curr.val)
+		s += fmt.Sprintf("%v->", curr.val)
 		curr = curr.next
 	}
-	return s
+	return s + "NULL"
 }
 
 // 给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。
