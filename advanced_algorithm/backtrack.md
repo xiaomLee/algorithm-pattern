@@ -20,6 +20,12 @@ func backtrack(选择列表,路径):
 
 核心就是从选择列表里做一个选择，然后一直递归往下搜索答案，如果遇到路径不通，就返回来撤销这次选择。
 
+## 参考阅读
+[回溯算法解题套路框架](https://labuladong.gitbook.io/algo/suan-fa-si-wei-xi-lie/hui-su-suan-fa-xiang-jie-xiu-ding-ban)
+[回溯算法团灭子集、排列、组合问题](https://labuladong.gitbook.io/algo/suan-fa-si-wei-xi-lie/zi-ji-pai-lie-zu-he)
+[回溯算法最佳实践：解数独](https://labuladong.gitbook.io/algo/suan-fa-si-wei-xi-lie/sudoku)
+[回溯算法最佳实践：括号生成](https://labuladong.gitbook.io/algo/suan-fa-si-wei-xi-lie/he-fa-kuo-hao-sheng-cheng)
+
 ## 示例
 
 ### [subsets](https://leetcode-cn.com/problems/subsets/)
