@@ -2,6 +2,9 @@
 
 ## 知识点
 
+[二叉树](https://labuladong.gitbook.io/algo/shu-ju-jie-gou-xi-lie/er-cha-shu-xi-lie-1)
+
+
 ### 二叉树遍历
 
 **前序遍历**：**先访问根节点**，再前序遍历左子树，再前序遍历右子树
