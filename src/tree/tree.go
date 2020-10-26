@@ -191,3 +191,32 @@ func MaxDepth(root *TreeNode) int {
 
 	return depth
 }
+
+func PathSum(root *TreeNode, sum int) [][]int {
+	var (
+		res  = make([][]int, 0)
+		path = make([]int, 0)
+	)
+
+	traversal(root, sum, path, &res)
+	return res
+}
+
+func traversal(root *TreeNode, sum int, list []int, res *[][]int) {
+	if root == nil {
+		return
+	}
+	list = append(list, root.Val)
+	fmt.Println(list)
+	fmt.Println(sum)
+	if root.Left == nil && root.Right == nil {
+		if sum == root.Val {
+			*res = append(*res, list)
+		}
+		return
+	}
+
+	traversal(root.Left, sum-root.Val, list, res)
+
+	traversal(root.Right, sum-root.Val, list, res)
+}
