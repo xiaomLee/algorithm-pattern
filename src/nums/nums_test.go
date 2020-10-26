@@ -13,3 +13,7 @@ func TestSubSets(t *testing.T) {
 func TestCombine(t *testing.T) {
 	fmt.Println(Combine(4, 2))
 }
+
+func TestDeleteItem(t *testing.T) {
+	fmt.Println(deleteItem([]int{1, 2, 3, 4}, 2))
+}

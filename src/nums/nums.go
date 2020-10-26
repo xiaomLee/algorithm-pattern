@@ -1,6 +1,6 @@
 package nums
 
-import "sort"
+import _ "sort"
 
 func SubSets(nums []int) [][]int {
 	if len(nums) == 0 {
@@ -67,4 +67,11 @@ func Combine(n, k int) [][]int {
 	backtrack(n, 1, k, track, &res)
 
 	return res
+}
+
+func deleteItem(nums []int, i int) []int {
+	l := make([]int, i)
+	copy(l, nums)
+	l = append(l, nums[i+1:]...)
+	return l
 }
