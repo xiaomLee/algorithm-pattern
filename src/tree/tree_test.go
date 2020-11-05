@@ -2,6 +2,7 @@ package tree
 
 import (
 	"fmt"
+	"math"
 	"testing"
 )
 
@@ -46,4 +47,5 @@ func TestPathSum(t *testing.T) {
 	PreTraversal(root)
 	rs := PathSum(root, 22)
 	fmt.Println(rs)
+	math.Abs()
 }
