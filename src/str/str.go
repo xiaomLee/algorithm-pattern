@@ -21,6 +21,7 @@ func Contain(haystack string, needle string) int {
 			return i
 		}
 	}
+	pause
 	return -1
 }
 
